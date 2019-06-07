@@ -1,0 +1,142 @@
+html{
+	font-size: 14px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+.pd0{
+	padding-right: 0;
+	padding-left: 0;
+}
+.star i{
+	color: #20baf0;
+}
+.floatr{
+	float: right;
+}
+.main-cv h1,.main-cv h2{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.main-cv h1{
+	color: #f59231;
+	font-size:4rem;
+}
+.main-cv h2{
+	font-size: 2rem;
+	color: #20baf0;
+	padding-bottom: 3px;
+	border-bottom: 5px solid #f59231;
+	display: inline-block;
+}
+.main-cv{
+	margin: 50px 0;
+	padding:50px 15px;
+	box-shadow:  0 0 5px #ccc;
+}
+.image-box {
+	position: relative;
+	overflow: hidden;
+	max-width: 250px;
+	margin-left: auto;
+}
+.image-box::before {
+	content: "";
+	display: block;
+	padding-top: 100%; /* initial ratio of 1:1*/
+}
+.image-box .image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	background-size: cover;
+	background-position: center;
+}
+.image-box.ratio-1-1::before {
+	padding-top: 100%;
+}
+.image-box.ratio-2-1::before {
+	padding-top: 50%;
+}
+.image-box.ratio-1-2::before {
+	padding-top: 200%;
+}
+.image-box.ratio-4-3:before {
+	padding-top: 75%;
+}
+.image-box.ratio-5-3:before {
+	padding-top: 60%;
+}
+.image-box.ratio-16-9:before {
+	padding-top: 56.25%;
+}
+
+.box-content div.row {
+    padding: 3px 0;
+}
+
+/* Timeline */
+.timeline {
+  border-left: 4px solid #004ffc;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 1px 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+}
+.timeline h1 {
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+	font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 0px;
+  text-align: justify;
+  margin-bottom: 0px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: rgba(255, 255, 255, 0.4);
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  font-family: 'Saira', sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #004ffc;
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}

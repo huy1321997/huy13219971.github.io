@@ -1,0 +1,584 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/**/
+
+/*header*/
+.header{
+    padding: 0;
+}
+.header{
+    height: 60px;
+    line-height: 60px;
+    padding-left:10px; 
+    border-bottom: 1px solid #000;
+}
+/*logo*/
+.logo{
+    text-align: center;
+}
+/*menu*/
+.menu{
+    padding: 0;
+}
+.menu ul{
+    margin-left:88px;
+}
+.menu li{
+    list-style: none;
+    float: left;
+    line-height: 56px;
+    height: 60px;
+    padding:0px 11px;
+}
+.menu li:nth-child(2){
+    padding-right: 35px;
+    position: relative;
+}
+.menu li:nth-child(5){
+    padding-right: 35px;
+    position: relative;
+}
+.menu li span{
+    position: absolute;
+    top:19px;
+    right:8px;
+    font-size: 10px;
+    background: red;
+    line-height: 1;
+    color:white;
+    padding:1px;
+    border-radius: 3px;
+}
+.menu li a:hover{
+    color:black;
+    text-decoration: none;
+}
+/*end menu*/
+
+/*header-right*/
+.header-right{
+    padding: 0;
+}
+.header-right ul{
+    margin-left:-3px;
+    line-height:58px;
+}
+.header-right li{
+    list-style: none;
+    float: left;
+}
+.header-right li:nth-child(2){
+    margin:0px 40px;
+    position: relative;
+    width: 20px;
+    height: 60px;
+}
+.header-right li:nth-child(3){
+    margin-right: 30px;
+    position: relative;
+}
+.header-right li:nth-child(3) a:hover{
+    color:orange;
+    text-decoration: none;
+}
+.header-right li:nth-child(4) a:hover{
+    color:orange;
+    text-decoration: none;
+}
+.header-right li .bell{
+    font-size: 19px;
+    position: absolute;
+    top:21px;
+    left:-10px;
+}
+.header-right li:nth-child(2) a:hover{
+    color:orange;
+}
+.header-right li .login{
+    position: absolute;
+    top:20px;
+    font-size: 19px;
+    left:-17px;
+}
+.header-right li:nth-child(5){
+    position: relative;
+    width: 185px;
+    height: 60px;
+    background: blue;
+    margin-left: 15px;
+}
+.header-right li .e{
+    position: absolute;
+    top:-9px;
+    left:10px;
+    color:white;
+    font-weight: 700;
+}
+.header-right li .p{
+    position: absolute;
+    top:10px;
+    left:10px;
+    color:black;
+    font-weight: 400;
+}
+
+/*end header-right*/
+/* end header*/
+
+/* slide*/
+/* end  slide*/
+
+/*featured Companies -- home */
+.home-new {
+    background:rgb(204, 198, 198);
+}
+.home h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.home .home-single{
+    padding:4px;
+    text-align: center;
+}
+.home .logo-box{
+    background: white;
+    padding:30px 0px 20px 0px;
+    border:1px solid rgb(161, 159, 159);
+    background: white;
+    height: 155px;
+    overflow: hidden;
+}
+.home .logo-box .box{
+    padding-bottom: 30px;
+    position: relative;
+    
+}
+.home .logo-box  a{
+    text-decoration: none;
+    color: black;
+
+}
+.home .logo-box .box .new-jobs{
+    width: 115px;
+    height: 23px;
+    background: #f7941d;
+    position: absolute;
+    top: -19px;
+    text-align: center;
+    line-height: 22px;
+    color: #f0f0f0;
+    transform: rotate(45deg);
+    font-size: 12px;
+    right: -34px;
+    box-shadow: 0 0 2px rgba(171,60,0,.5);
+    font-weight: 700;
+}
+
+/* end featured Companies -- home */
+/*Our Channel*/
+.our-channel h3{
+    font-size: 36px;
+    text-align: center;
+    margin-top:50px;    
+    margin-bottom: 20px;
+
+}
+
+.our-channel .overlay{
+    opacity: .4;
+    background-color: #333;
+    bottom: 0;
+    -webkit-transition: all .4s cubic-bezier(.47,0,.745,.715);
+    transition: all .4s cubic-bezier(.47,0,.745,.715);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    margin:0 14px;
+}
+.our-channel .content {
+    min-height: 240px;
+    top:0;
+    color:white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 361px;
+}
+.our-channel .content img{
+    margin-bottom: 25px;
+    max-width: 60px;
+}
+.our-channel .content .channel-label{
+    -webkit-transition: all .4s cubic-bezier(.47,0,.745,.715);
+    transition: all .4s cubic-bezier(.47,0,.745,.715);
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.our-channel .content .numberjobs{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.our-channel .content  .btn{
+    min-width: 120px;
+    transition: all .3s;
+}
+.our-channel .content .btn-primary{
+    font-weight: 500;
+    color: #fff;
+    background-color: #f7941d;
+    border-color: #f28809;
+}
+.our-channel .channel:hover .overlay {
+    background-color: #111;
+    opacity: .6;
+}
+/* end Our Channel*/
+/* Your Jobs*/
+.YourJobs{
+   margin-bottom: 150px;
+}
+.YourJobs h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 300;
+}
+.YourJobs .tab-wrapper{
+    background: white;
+}
+.YourJobs .tab{
+    margin:30px 0px 0px 0px;
+    padding-top:40px;
+}
+.YourJobs .tab .choose{
+    padding:0;
+}
+.YourJobs .tab .choose div{
+    border-bottom: 2px solid #333;
+    margin:2px;
+    width: 198px;
+    text-align: center;
+}
+.YourJobs .tab .choose div.active{
+    border-bottom: 2px solid orange;
+}
+.YourJobs .tab div a{
+    text-decoration: none;
+}
+.YourJobs .tab div a:hover{
+    text-decoration: none;
+}
+.YourJobs .tab div a p{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin:0;
+}
+.YourJobs .tabcontent{
+    padding:20px;
+}
+.YourJobs .tabcontent li{
+    list-style: none;
+    border-bottom: 1px solid #333;
+}
+.YourJobs .tabcontent li:last-child{
+    border-bottom: none;
+}
+.YourJobs .tabcontent li .row{
+    padding: 0;
+    margin:0;
+}
+.YourJobs .tabcontent li .row div{
+    padding:10px 0px;
+}
+.YourJobs .tabcontent li .row div:first-child{
+    padding-right: 4px;
+}
+.YourJobs .tabcontent li .row div p a{
+    text-decoration: none;
+    font-weight: 700;
+    transition: all .2s ease-in;
+}
+.YourJobs .tabcontent li .row div p a:hover{
+    color:orange;
+}
+.YourJobs .tabcontent li .row div span{
+    background: red;
+    padding:4px;
+    color:white;
+    border-radius: 5px;
+}
+.YourJobs .tab-wrapper .com-slider-bottom{
+    height: 70px;
+    width: 100%;
+}
+.YourJobs .tab-wrapper .com-slider-bottom ul {
+    text-align: center;
+}
+.YourJobs .tab-wrapper .com-slider-bottom ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+.YourJobs .tab-wrapper .com-slider-bottom ul li:nth-child(1) a  span{
+    color:white;
+    transform: rotate(180deg);
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    line-height: 35px;
+    background: rgb(150, 146, 146);
+    border-radius: 50%;
+}
+.YourJobs .tab-wrapper .com-slider-bottom ul li:nth-child(10) a  span{
+    color:white;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    line-height: 35px;
+    background: rgb(150, 146, 146);
+    border-radius: 50%;
+}
+.YourJobs .tab-wrapper .com-slider-bottom ul li a div {
+    background: rgb(150, 146, 146);
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.YourJobs .tab-wrapper .com-slider-bottom ul li a div.active{
+    background: rgb(85, 93, 212);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+/* end Your Jobs*/
+
+/* company*/
+.Company h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.Company .container{
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    padding:0;
+    margin: 0;
+}
+.Company .c-content{
+    width:100%;
+    position: absolute;
+    bottom: 70px;
+    padding:0px 15%;
+    margin:0;
+}
+.Company .c-content .row{
+    background: white;  
+    padding-bottom: 30px;
+
+}
+.Company .c-content .row .logo{
+    line-height: 200px;
+    align-items: center;
+}
+
+.Company .c-content .row h3{
+    color:black;
+    font-weight: 700;
+}
+.Company .c-content .row .combutton{
+    background: white;
+    color:orange;
+    transition:all .3s ease;
+    text-decoration: none;
+    border:1px solid orange;
+    padding:10px 35px;
+    border-radius:4px;  
+    font-weight: 700;
+    font-size: 20px;
+}
+.Company .c-content .row .combutton:hover{
+    background: orange;
+    color:white;
+    border:1px solid rgb(240, 120, 8);
+}
+.Company .com-slider-bottom{
+    height: 200px;
+    width: 100%;
+}
+.Company .com-slider-bottom ul {
+    text-align: center;
+    margin-top:190px;
+
+}
+.Company .com-slider-bottom ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+.Company .com-slider-bottom ul li:nth-child(1) a  span{
+    color:white;
+    transform: rotate(180deg);
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    line-height: 35px;
+    background: rgb(150, 146, 146);
+    border-radius: 50%;
+}
+.Company .com-slider-bottom ul li:nth-child(5) a  span{
+    color:white;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    line-height: 35px;
+    background: rgb(150, 146, 146);
+    border-radius: 50%;
+}
+.Company .com-slider-bottom ul li a div {
+    background: rgb(150, 146, 146);
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.Company .com-slider-bottom ul li a div.active{
+    background: rgb(85, 93, 212);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+/* end company*/
+
+/*--Favorite Employer*/
+
+.fe h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.feimg{
+    padding: 0;
+}
+.fe .feimg .ahihi{  
+    padding: 39px;
+    background:white;
+}
+.fe-bottom{
+    margin-top:80px;
+}
+.fe .linkfe {
+    
+    color:blue;
+    transition: all 0.6s ease-in-out;
+}
+.fe .linkfe:hover{
+    color:orange;
+    text-decoration: none;
+}
+/*--end Favorite Employer*/
+/*hinh anh*/
+.hinhanh{
+    margin-top:100px;
+    margin-bottom: 40px;
+    background: white;
+  
+    height: 250px;
+    line-height: 250px;
+    margin-right:15px ;
+    margin-left:15px;
+}
+/*end hinh anh*/
+/* near footer*/
+.nearfooter{
+    padding:30px 0px;
+    margin:20px 0px; 
+    background: white;
+}
+.nearfooter ul {
+    list-style: none;
+}
+.nearfooter .link-nearfooter a{
+    color:blue;
+}
+.nearfooter ul li a:hover{
+    text-decoration: none;
+    color:orange
+}
+
+/*end near footer*/
+/*footer*/
+.footer ul li{
+    list-style: none;
+}
+.footer-left li a:hover{
+    text-decoration: none;
+    color:orange;
+}
+.footer-center li a:hover{
+    text-decoration: none;
+    color:orange;
+}
+.footer-right li a:hover{
+    text-decoration: none;
+}
+.footer-right li ul li{
+    display: inline;
+}
+
+.footer-right .icon li {
+    display: inline-block;
+    margin-right: 4px;
+}
+.footer-right .icon li div{
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    background:rgb(56, 50, 143);
+    border-radius: 50%;
+    -webkit-transition: all .4s cubic-bezier(.47,0,.745,.715);
+    transition: all .4s cubic-bezier(.47,0,.745,.715);
+}
+.footer-right .icon li div span{
+    font-size: 20px;
+    color:white;
+}
+.footer-right .icon li div:hover{
+    background:  #333;
+    
+}
+.footer-bottom{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+/* end footer*/
+
+
+body{
+    
+}
