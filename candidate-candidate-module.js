@@ -2701,14 +2701,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_service_candidate_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/service/candidate.service */ "./src/app/service/candidate.service.ts");
 /* harmony import */ var src_app_service_job_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/service/job.service */ "./src/app/service/job.service.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var src_app_service_socket_io_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/service/socket-io.service */ "./src/app/service/socket-io.service.ts");
+
 
 
 
 
 
 var ViewCVComponent = /** @class */ (function () {
-    function ViewCVComponent(_sanitizer, candidateService, jobService) {
+    function ViewCVComponent(soketIo, _sanitizer, candidateService, jobService) {
         var _this = this;
+        this.soketIo = soketIo;
         this._sanitizer = _sanitizer;
         this.candidateService = candidateService;
         this.jobService = jobService;
@@ -2739,6 +2742,7 @@ var ViewCVComponent = /** @class */ (function () {
             .subscribe(function (res) {
             alert('Yêu cầu xác nhận CV thành công!');
         });
+        this.soketIo.emit("Request", "1");
     };
     ViewCVComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -2746,7 +2750,7 @@ var ViewCVComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./view-cv.component.html */ "./src/app/candidate/view-cv/view-cv.component.html"),
             styles: [__webpack_require__(/*! ./view-cv.component.scss */ "./src/app/candidate/view-cv/view-cv.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"], src_app_service_candidate_service__WEBPACK_IMPORTED_MODULE_2__["CandidateService"], src_app_service_job_service__WEBPACK_IMPORTED_MODULE_3__["JobService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_service_socket_io_service__WEBPACK_IMPORTED_MODULE_5__["SocketIoService"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["DomSanitizer"], src_app_service_candidate_service__WEBPACK_IMPORTED_MODULE_2__["CandidateService"], src_app_service_job_service__WEBPACK_IMPORTED_MODULE_3__["JobService"]])
     ], ViewCVComponent);
     return ViewCVComponent;
 }());
